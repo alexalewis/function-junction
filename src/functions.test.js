@@ -4,35 +4,65 @@
  * construct available in Javascript.
  */
 
-// ...
+const max = (a, b) => {
+  if (a > b) {
+    return a
+  } else {
+    return b
+  }
+}
 
 /**
  * 2) Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
 
-// ...
+const maxOfThree = (a, b, c) => {
+  if (a > b && a > c) {
+    return a
+  } else if (b > a && b > c) {
+    return b
+  } else if (c > a && c > b) {
+    return c
+  }
+}
 
 /*
  * 3) Define a function sum() that takes two numbers as
  * arguments and computes the sum of those two numbers.
  */
-
-// ...
+const sum = (a, b) => {
+  let total = a + b
+  return total
+}
 
 /*
  * 4) Define a function sumOfArray that calculates the sum of
  * all the numbers in an array.
  */
 
-// ...
-
+const sumOfArray = array => {
+  let i
+  let total = 0
+  for (i = 0; i < array.length[i]; i++) total = total + array[i]
+}
+return total
 /**
  * 5) Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
 
-// ...
+const isVowel = character => {
+  let lowerCaseCharacter = character.toLowerCase()
+
+  return (
+    lowerCaseCharacter === 'a' ||
+    lowerCaseCharacter === 'e' ||
+    lowerCaseCharacter === 'i' ||
+    lowerCaseCharacter === 'o' ||
+    lowerCaseCharacter === 'u'
+  )
+}
 
 /**
  * 6) Write a function rovarspraket() that will translate
@@ -51,8 +81,6 @@
  * reverse("skoob") should return the
  * string "books".
  */
-
-// ...
 
 /**
  * 8) Write a function findLongestWord() that takes an
